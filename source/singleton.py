@@ -1,3 +1,4 @@
+"""This source code demonstrate examples of singleton design pattern"""
 class SingletonMetaClass(type):
     """
     This is Metaclass to befine the behavior of a sungleton class
