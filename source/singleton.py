@@ -1,7 +1,9 @@
 """This source code demonstrate examples of singleton design pattern"""
+
+
 class SingletonMetaClass(type):
     """
-    This is Metaclass to befine the behavior of a sungleton class
+    This is Metaclass to define the behavior of a sungleton class
     """
     _instances_dict = {}
 
@@ -33,6 +35,10 @@ class ConnectionClass2(metaclass=SingletonMetaClass):
     def __init__(self):
         print(f"Initiating a class of type {type(self)}")
         self._connection_string = "ConnectionClass2"
+
+    @property
+    def get_connection_string(self):
+        return self._connection_string
 
 
 if __name__ == "__main__":
